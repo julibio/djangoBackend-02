@@ -5,11 +5,12 @@ from .models import Student,Curso,Diario
 
 
 class StudentSerializer(ModelSerializer):
-  matricula = serializers.StringRelatedField(many=True)
+  # matricula = serializers.StringRelatedField(many=True)
   
   class Meta:
     model = Student
-    fields = ['id', 'name', 'course', 'rating', 'matricula']
+    # fields = ['id', 'name', 'course', 'rating', 'matricula']
+    fields = ['id', 'name', 'course', 'rating']
 
 
 class CursoSerializer(ModelSerializer):

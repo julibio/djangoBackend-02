@@ -1,0 +1,39 @@
+1) python -m venv venv
+
+cria o diretorio venv (virtual)
+venv\Scripts\activate
+
+
+-----
+
+2) 
+
+pip install django
+pip install djangorestframework
+pip install django-cors-headers
+
+----
+
+3)
+
+django-admin startproject backend
+
+na pasta raiz do projeto:
+
+manage.py migrate
+manage.py runserver (rodar server)
+manage.py startapp students
+
+// para criar models
+manage.py makemigrations
+manage.py migrate
+manage.py createsuperuser
+pip install djangorestframework
+pip install django-cors-headers
+----
+
+** para sair do venv
+
+deactivate
+
+
